@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  padding: 0 1rem;
+}
+
+.content {
+  padding: 1.5rem 0;
+  min-height: calc(100vh - 70px - 64px);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-content p {
+  cursor: pointer;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-wrap: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-wrapper ul {
+    display: none;
+  }
+}
+
+.recipe-card {
+  flex-direction: unset;
+  flex-wrap: wrap;
+}
+
+.recipe-card.card .card-image {
+  flex-basis: 40%;
+}
+
+.recipe-card .card-content p {
+  cursor: unset;
+}
+
+.table-header th {
+  padding: 5px 0;
+
+}
+
+.ingredient-row td {
+  padding: 2px 0;
+  font-size: 0.75rem;
+  border-radius: unset;
+}
+
+.iframe {
+  margin-top: 2rem;
+  height: 300px;
+}
+
+.iframe iframe {
+  height: 100%;
+  width: 500px;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
