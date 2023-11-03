@@ -12,7 +12,7 @@ import { Recipe } from "./pages/Recipe";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/react-shop">
+      <BrowserRouter basename="/react-food">
         <Header />
         <main className="container content">
           <Routes>
